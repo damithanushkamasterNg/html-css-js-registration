@@ -27,5 +27,5 @@ function validateForm() {
       return false;
     }
   
-    return true;
+    //call to back end to save data
   }
