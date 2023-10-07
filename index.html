@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>User Registration</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-</head>
-<body>
-  <div class="container">
-    <div class="registration-form">
-      <h1>User Registration</h1>
-      <form action="/register" method="post" onsubmit="return validateForm()">
-        <div class="row">
-          <label for="username">Username</label>
-          <input type="text" name="username" id="username" placeholder="Username" required>
-        </div>
-        <div class="row">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Email" required>
-        </div>
-        <div class="row">
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" placeholder="Password" required>
-        </div>
-        <div class="row">
-          <label for="confirm_password">Confirm Password</label>
-          <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
-        </div>
+  <head>
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-name">User Registration</h1>
+      <div class="registration-form">
+        <form onsubmit="validateForm()">
+          <div class="row">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required />
+          </div>
+          <div class="row">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="row">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+          <div class="row">
+            <label for="confirm_password">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm_password"
+              id="confirm_password"
+              required
+            />
+          </div>
 
-        <button type="submit">Register</button>
-      </form>
+          <button type="submit">Register</button>
+        </form>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
