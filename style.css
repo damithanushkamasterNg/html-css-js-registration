@@ -5,8 +5,8 @@ body {
 }
 
 .form-name {
-    text-align: center;
-  }
+  text-align: center;
+}
 
 .container {
   width: 100%;
@@ -51,8 +51,17 @@ body {
 .registration-form input {
   width: 450;
   height: 25px;
-  border: 1px solid #ccc;
+  border: none;
+  border-bottom: 1px solid #bcbcbc;
   border-radius: 3px;
+}
+
+.registration-form input:focus-visible {
+  outline: none;
+}
+
+.registration-form input:hover {
+  border-bottom: 1px solid #858181;
 }
 
 .registration-form button {
@@ -62,5 +71,9 @@ body {
   color: #fff;
   border: none;
   border-radius: 3px;
+}
+
+.registration-form button:hover {
   cursor: pointer;
+  background-color: rgb(44, 169, 44);
 }
