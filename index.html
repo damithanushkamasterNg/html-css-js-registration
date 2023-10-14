@@ -3,13 +3,12 @@
   <head>
     <title>User Registration</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
       <h1 class="form-name">User Registration</h1>
       <div class="registration-form">
-        <form onsubmit="validateForm()">
+        <form onsubmit="submitForm()">
           <div class="row">
             <label for="username">Username</label>
             <input type="text" name="username" id="username" required />
@@ -36,5 +35,7 @@
         </form>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
